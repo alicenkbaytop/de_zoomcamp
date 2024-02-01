@@ -6,7 +6,7 @@ from google.cloud import storage
 if 'data_exporter' not in globals():
     from mage_ai.data_preparation.decorators import data_exporter
 
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = ""
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = "/home/src/nifty-time-412619-128f04fce1fd.json"
 
 bucket_name = 'mage-zoomcamp-acb'
 
