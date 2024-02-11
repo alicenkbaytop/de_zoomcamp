@@ -31,7 +31,7 @@ SELECT * FROM nifty-time-412619.ny_taxi.green_tripdata_non_partitoned;
 
 -- Write a query to retrieve the distinct PULocationID between lpep_pickup_datetime 06/01/2022 and 06/30/2022 (inclusive)
 -- Use the materialized table you created earlier in your from clause and note the estimated bytes. Now change the table in the from clause to the partitioned table you created for question 4 and note the estimated bytes processed. What are these values?
--- 0 MB processed
+-- 1.12 MB processed
 SELECT DISTINCT PULocationID FROM nifty-time-412619.ny_taxi.green_tripdata_partitoned
 WHERE DATE(lpep_pickup_datetime) BETWEEN '2022-06-01' AND '2022-06-30';
 -- 12.82 MB processed
