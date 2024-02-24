@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: staging
-    database: terraform-de-411309
+    database: nifty-time-412619
      # For postgres:
       #database: production
     schema: taxi_rides_all
